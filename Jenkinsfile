@@ -9,7 +9,7 @@ node {
 
     stage('Build image') {
   
-       app = docker.build("cloudsavara/test")
+       app = sudo docker.build("cloudsavara/test")
     }
 
     stage('Test image') {
